@@ -56,57 +56,107 @@ background-size: 175px;
   height:500px;
 }
 
-
-/*Carousel Styles*/
-.item {
-  height: 650px;
-  background-size: cover;
-  background-position: center;
+/*Work Styles*/
+#work {
+  height:600px;
 }
 
-#herobg {
-  background-image: url('../img/tqfinal.png');
-  background-size: contain;
-  background-repeat: no-repeat;
+#work h3 {
+  color: #5E2E30;
+  font-family: 'Lato', Cursive;
+  font-size: 48px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px #313;
 }
 
-/*.carousel-caption {
-  color: #red;
+.wrapper {
+	width: 80%;
+	margin: 20px auto;
+}
+
+/*div.gallery {
+	margin-top: 30px;
 }*/
 
-#slide-logo {
-  height: 250px;
+div.gallery ul {
+	list-style-type:none;
+	/*margin-left: 35px;*/
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-  height: 550px;
+/* animation */
+div.gallery ul li, div.gallery li img {
+	-webkit-transition: all 0.1s ease-in-out;
+  	-moz-transition: all 0.1s ease-in-out;
+  	-o-transition: all 0.1s ease-in-out;
+  	transition: all 0.1s ease-in-out;
 }
 
-#retro1bg {
-  background-image: url('../img/goku1.JPG');
+div.gallery ul li {
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 175px;
+	margin: 5px;
+	padding: 5px;
+	z-index: 0;
 }
 
-#glowbg {
-  background-image: url('../img/glow.JPG');
+/* Ensure that hover image overlapped the others */
+div.gallery ul li:hover {
+	z-index: 5;
 }
 
-.btn-warning {
-  background-color: #F8512F;
-  border-color: #F8512F;
+/* Image is position nicely under li */
+div.gallery ul li img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 1px solid #dddddd;
+	padding: 5px;
+	width: 250px;
+	height: 230px;
+	background: #f0f0f0;
 }
 
-.btn-danger:hover {
-  background-color: #D34326;
-  border-color: #D34326;
-  cursor: crosshair;
+div.gallery ul li img:hover {
+	width: 300px;
+	height: 300px;
+	margin-top: -130px;
+	margin-left: -130px;
+	top: 65%;
+	left: 65%;
 }
 
-.carousel-caption {
-  margin-bottom: 45px;
+p.attribution {
+	font-family: 'Consolas';
+	color: #000;
+	clear: both;
+	text-align: center;
+	line-height: 25px;
+	padding-top: 30px;
 }
 
+p.attribution a {
+	color: #4c8d7c;
+}
+
+/* Responsive hack */
+@media only screen and (min-width: 499px) and (max-width: 1212px) {
+	.wrapper {
+		width: 500px;
+	}
+}
+
+@media only screen and (max-width: 498px) {
+	.wrapper {
+		width: 300px;
+	}
+
+	div.gallery ul {
+		list-style-type: none;
+		margin: 0;
+	}
+}
 /*Extra Styles*/
 
 #extra {
@@ -143,8 +193,32 @@ background-size: 175px;
   height: 550px;
 }
 
-/*Corner Styles*/
+/*Contact Form Styles*/
+.left-col {
+  height: 550px;
+}
+.row h3 {
+  color: #5E2E30;
+  font-family: 'Lato', Cursive;
+  font-size: 48px;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px 2px #313;
+}
 
+.row {
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+.right-col img {
+  height: 400px;
+}
+
+#inputmessage {
+  height: 150px;
+}
+
+/*Corner Styles*/
 
 .topbar, .bottombar{
 position:fixed;
@@ -222,5 +296,3 @@ align-items: flex-end;
 .topbar, .bottombar{
 height:45px;
 }
-
-/*Contact Form Styles*/
