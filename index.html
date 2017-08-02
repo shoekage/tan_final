@@ -9,23 +9,26 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="icon" href="favicon.ico">
 </head>
-<body>
+<body data-spy="scroll" data-target="header">
 	<!-- Corners Begins -->
+	<div class="start" id="start">
 		<div class="header" id="header">
 			<div class="topbar" style="background-color: transparent;"></div>
 			<div class="bottombar" style="background-color: transparent;"></div>
-			<div class="section_button title">Tan Quach</div>
-			<div class="section_button work">work</div>
-			<div class="section_button about">about</div>
-			<div class="section_button contact">contact</div>
+			<div class="section_button title"><a href="#start">Tan Quach</div>
+			<div class="section_button work"><a href="#carousel-example-generic">work</div>
+			<div class="section_button about"><a href="#about">about</div>
+			<div class="section_button contact"><a href="https://www.facebook.com/shoekage"><i class="fa fa-facebook-square fa" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/tandquach"><i class="fa fa-linkedin-square fa" aria-hidden="true"></i><a href="#contact"> contact</a></div>
 		</div>
+	</div>
 	 <!-- Corners Ends -->
 	 <!-- Hero Begins -->
  	<div class="container-fluid" id="about">
  		 <div class="row aboutme">
  			 <div class="left-col col-sm-6 text-center">
  					<h1>About Me</h1>
- 					<h3>One Man. One Dream.</h3>
+ 					<h3>My Story</h3>
  				</div>
  				<div class="right-col col-sm-6 text-justify">
  					<!-- <h3 class="year">1984</h3> -->
@@ -50,8 +53,8 @@
 	    <div class="item active" id="herobg"> <!-- Slide 1 Begins -->
 				<div class="flex">
 					<div class="carousel-caption">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at quia neque sequi architecto doloremque facere expedita. Inventore obcaecati et rerum laboriosam, soluta doloribus quasi, ipsum iusto numquam aspernatur libero.</p>
-	 				 <button class="btn btn-danger">Browse Gallery</button>
+						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at quia neque sequi architecto doloremque facere expedita. Inventore obcaecati et rerum laboriosam, soluta doloribus quasi, ipsum iusto numquam aspernatur libero.</p> -->
+	 				 <button class="btn btn-danger"><a href="https://preview.c9users.io/tquach/tqfinalproject/about.html">See More</a></button>
 	 			 </div>
 	      	<!-- <img src="img/glow.JPG" alt="Logo" class="img-responsive center-block" id="slide-logo"> -->
 	    	</div>
@@ -84,16 +87,19 @@
 	<!-- Carousel Ends -->
 	<!-- Extra Section Begins -->
   <div class="container-fluid" id="extra">
-	  <div class="row reviewsection">
+	  <div class="row extrasection">
 	 	 <div class="flex">
  			 <div class="fresno col-sm-8 col-sm-offset-2 text-center">
  				 <h1>Fresno State Alumni</h1>
 				 <p>B.S. Computer Information Systems</p>
  			 </div>
 		 </div>
-  </div>
+   </div>
+	</div>
   <!-- Extra Section Ends -->
+	<!--Contact Form Begins-->
 
+  <!-- Contact Form Ends -->
 	<!-- javascript	 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

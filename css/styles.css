@@ -2,7 +2,61 @@
 
 body {
   background-color: #efefef;
+  position: relative;
 }
+
+a, .btn a {
+  text-decoration:none;
+  color: #5E2E30;
+  cursor: crosshair;
+}
+
+a:hover {
+  color: #5E2E30;
+}
+
+/*Home Styles*/
+.header {
+position:relative;
+width:100%;
+height:100vh;
+background-image:url(../img/tq-burg.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 175px;
+}
+
+/*About Me Styles*/
+
+.left-col h1 {
+  color: #5E2E30;
+  font-family: 'Lato', Cursive;
+  font-size: 5em;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px 2px #313;
+}
+.left-col h3 {
+  margin-top: 0px;
+
+}
+.right-col .year {
+  font-family: 'Playfair Display';
+  font-weight: 900;
+  position: absolute;
+  z-index: -1;
+  color: rgba(51, 51, 51, 0.1);
+  font-size: 170px;
+}
+
+.right-col {
+  background-image:url('../img/tan.jpg');
+}
+.aboutme {
+  margin: 10% auto;
+  height:500px;
+}
+
+
 /*Carousel Styles*/
 .item {
   height: 650px;
@@ -11,9 +65,14 @@ body {
 }
 
 #herobg {
-  background-image: url('../img/goku1.JPG');
+  background-image: url('../img/tqfinal.png');
   background-size: contain;
+  background-repeat: no-repeat;
 }
+
+/*.carousel-caption {
+  color: #red;
+}*/
 
 #slide-logo {
   height: 250px;
@@ -26,7 +85,7 @@ body {
 }
 
 #retro1bg {
-  background-image: url('../img/retro1s.JPG');
+  background-image: url('../img/goku1.JPG');
 }
 
 #glowbg {
@@ -48,41 +107,12 @@ body {
   margin-bottom: 45px;
 }
 
-/*About Me Styles*/
-
-.left-col h1 {
-  color: #B10007;
-  font-family: 'Lobster', Cursive;
-  font-size: 5em;
-  margin-bottom: 0px;
-  text-shadow: 1px 1px 2px #313;
-}
-.left-col h3 {
-  margin-top: 0px;
-}
-.right-col .year {
-  font-family: 'Playfair Display';
-  font-weight: 900;
-  position: absolute;
-  z-index: -1;
-  color: rgba(51, 51, 51, 0.1);
-  font-size: 170px;
-}
-
-.right-col {
-  background-image:url('../img/tan.jpg');
-}
-.aboutme {
-  margin: 10% auto;
-  height:500px;
-}
-
 /*Extra Styles*/
 
 #extra {
   height: 750px;
-  background-image: url('../img/shoekage.jpg');
-  background-size: cover;
+  background-image: url('../img/grad.jpeg');
+  background-size: contain;
   background-attachment: fixed;
 }
 .fresno {
@@ -91,8 +121,8 @@ body {
   border-radius: 5px;
 }
 .fresno h1 {
-  color: #B10007;
-  font-family: 'Lobster', Cursive;
+  color: #5E2E30;
+  font-family: 'Lato', Cursive;
   font-size: 5em;
   margin-bottom: 0px;
   text-shadow: 1px 1px 2px #313;
@@ -115,14 +145,6 @@ body {
 
 /*Corner Styles*/
 
-.header {
-position:relative;
-width:100%;
-height:100vh;
-background-image:url(../img/tan2.png);
-background-repeat: no-repeat;
-background-position: center;
-}
 
 .topbar, .bottombar{
 position:fixed;
@@ -200,3 +222,5 @@ align-items: flex-end;
 .topbar, .bottombar{
 height:45px;
 }
+
+/*Contact Form Styles*/
